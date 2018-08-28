@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<div class="row" style="padding:20px;">
+    <h4 style="margin-top:30px;">My Products</h4>
+    <hr />
+    <a asp-controller="product" asp-action="add">Add new product</a><br />
+    <div>
+        <table id="t01">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Photo</th>
+                <th>Status</th>
+                <th>Price</th>
+                <th>Quantity</th>
+
+            </tr>
+            @foreach (var item in ViewBag.lstProducts)
+            {
+
+            <tr>
+                <td>
+                    @item.Id
+                </td>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    <img src="~/images/@item.Photo" width="120" />
+                </td>
+                <td>
+                    @item.Status
+                </td>
+                <td>
+                    @item.Price
+                </td>
+                <td>
+                    @item.Quantity
+                </td>
+                
+                <td>
+                    <a asp-controller="product" asp-action="edit" asp-route-id="@item.Id" class="btn btn-primary a-btn-slide-text">
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                        <span><strong>Edit</strong></span>
+                    </a>
+                </td>
+                <td>
+                    <a asp-controller="product" asp-action="delete" asp-route-id="@item.Id" onclick="return confirm('are you sure?')" class="btn btn-primary a-btn-slide-text">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                        <span><strong>Delete</strong></span>
+                    </a>
+                </td>
+            </tr>
+
+            }
+
+        </table>
+    </div>
+</div>
+
+<style>
+    table#t01 {
+        width: 100%;
+        background-color: #f1f1c1;
+    }
+
+        table#t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+        table#t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        table#t01 th {
+            color: white;
+            background-color: rgb(70,130,180);
+        }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+</style> 

@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<div class="row" style="padding:20px;">
+    <h4 style="margin-top:30px;">My Students</h4>
+    <hr />
+
+    <div>
+        <table id="t01">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+
+            </tr>
+            @foreach (var item in ViewBag.lstStudents)
+            {
+
+                <tr>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.Email
+                    </td>
+                    <td>
+                        <a href="#" class="btn btn-primary a-btn-slide-text">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                            <span><strong>Edit</strong></span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" class="btn btn-primary a-btn-slide-text">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            <span><strong>Delete</strong></span>
+                        </a>
+                    </td>
+                </tr>
+
+            }
+
+        </table>
+    </div>
+</div>
+
+<style>
+    table#t01 {
+        width: 100%;
+        background-color: #f1f1c1;
+    }
+
+        table#t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+        table#t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        table#t01 th {
+            color: white;
+            background-color: rgb(70,130,180);
+        }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+</style> 

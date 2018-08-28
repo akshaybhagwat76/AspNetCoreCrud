@@ -1,0 +1,50 @@
+﻿@model WebApplication.Models.Product;
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h2>Edit</h2>
+
+<form method="post" enctype="multipart/form-data" asp-controller="product" asp-action="Edit" >
+    <table cellpadding="2" cellspacing="2">
+        <tr>
+            <td>Name</td>
+            <td>
+                <input asp-for="Name" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>Price</td>
+            <td>
+                <input asp-for="Price" />
+            </td>
+        </tr>
+        <tr>
+            <td>Quantity</td>
+            <td>
+                <input asp-for="Quantity" />
+            </td>
+        </tr>
+        <tr>
+            <td>Status</td>
+            <td>
+                <input type="checkbox" asp-for="Status" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>Photo</td>
+            <td><input type="file" name="photo" />
+                <br />
+            <img src="~/images/@Model.Photo"  width="50"/>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><input type="submit" value="Save" />
+                <input type="hidden" asp-for="Id" />
+            </td>
+        </tr>
+    </table>
+</form>

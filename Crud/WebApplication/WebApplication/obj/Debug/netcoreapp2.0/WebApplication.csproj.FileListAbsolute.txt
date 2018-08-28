@@ -1,0 +1,12 @@
+F:\MyResearch\dotnetcore\Crud\WebApplication\WebApplication\bin\Debug\netcoreapp2.0\WebApplication.deps.json
+F:\MyResearch\dotnetcore\Crud\WebApplication\WebApplication\bin\Debug\netcoreapp2.0\WebApplication.runtimeconfig.json
+F:\MyResearch\dotnetcore\Crud\WebApplication\WebApplication\bin\Debug\netcoreapp2.0\WebApplication.runtimeconfig.dev.json
+F:\MyResearch\dotnetcore\Crud\WebApplication\WebApplication\bin\Debug\netcoreapp2.0\WebApplication.dll
+F:\MyResearch\dotnetcore\Crud\WebApplication\WebApplication\bin\Debug\netcoreapp2.0\WebApplication.pdb
+F:\MyResearch\dotnetcore\Crud\WebApplication\WebApplication\obj\Debug\netcoreapp2.0\WebApplication.csprojAssemblyReference.cache
+F:\MyResearch\dotnetcore\Crud\WebApplication\WebApplication\obj\Debug\netcoreapp2.0\WebApplication.csproj.CoreCompileInputs.cache
+F:\MyResearch\dotnetcore\Crud\WebApplication\WebApplication\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+F:\MyResearch\dotnetcore\Crud\WebApplication\WebApplication\obj\Debug\netcoreapp2.0\WebApplication.AssemblyInfoInputs.cache
+F:\MyResearch\dotnetcore\Crud\WebApplication\WebApplication\obj\Debug\netcoreapp2.0\WebApplication.AssemblyInfo.cs
+F:\MyResearch\dotnetcore\Crud\WebApplication\WebApplication\obj\Debug\netcoreapp2.0\WebApplication.dll
+F:\MyResearch\dotnetcore\Crud\WebApplication\WebApplication\obj\Debug\netcoreapp2.0\WebApplication.pdb
